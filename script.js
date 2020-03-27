@@ -15,9 +15,26 @@ const Db5 = new Audio("sounds/Db5.mp3");
 const D5 = new Audio("sounds/D5.mp3");
 const Eb5 = new Audio("sounds/Eb5.mp3");
 const E5 = new Audio("sounds/E5.mp3");
+const F5 = new Audio("sounds/F5.mp3");
+const Gb5 = new Audio("sounds/Gb5.mp3");
+const G5 = new Audio("sounds/G5.mp3");
+const Ab5 = new Audio("sounds/Ab5.mp3");
+const A5 = new Audio("sounds/A5.mp3");
+const Bb5 = new Audio("sounds/Bb5.mp3");
+const B5 = new Audio("sounds/B5.mp3");
+const C6 = new Audio("sounds/C6.mp3");
+const Db6 = new Audio("sounds/Db6.mp3");
+const D6 = new Audio("sounds/D6.mp3");
+const Eb6 = new Audio("sounds/Eb6.mp3");
+const E6 = new Audio("sounds/E6.mp3");
+
+// New Consts 
+
+
 
 const playSound = audio => {
   const clone = audio.cloneNode();
+  
   clone.play();
   setTimeout(() => (clone.volume = 0.8), 400);
   setTimeout(() => (clone.volume = 0.6), 800);
@@ -25,6 +42,7 @@ const playSound = audio => {
   setTimeout(() => (clone.volume = 0.2), 1600);
   setTimeout(() => (clone.volume = 0), 2000);
 };
+
 
 // C4
 const C4Key = document.querySelector(".C4-key");
@@ -178,6 +196,116 @@ const playE5 = () => {
   setTimeout(() => E5Key.classList.remove("active"), 200);
 };
 E5Key.addEventListener("click", playE5);
+
+// F5
+const F5Key = document.querySelector(".F5-key");
+const playF5 = () => {
+  playSound(F5);
+  F5Key.classList.add("active");
+  setTimeout(() => F5Key.classList.remove("active"), 200);
+};
+F5Key.addEventListener("click", playF5);
+
+// Gb5
+const Gb5Key = document.querySelector(".Gb5-key");
+const playGb5 = () => {
+  playSound(Gb5);
+  Gb5Key.classList.add("active");
+  setTimeout(() => Gb5Key.classList.remove("active"), 200);
+};
+Gb5Key.addEventListener("click", playGb5);
+
+// G5
+const G5Key = document.querySelector(".G5-key");
+const playG5 = () => {
+  playSound(G5);
+  G5Key.classList.add("active");
+  setTimeout(() => G5Key.classList.remove("active"), 200);
+};
+G5Key.addEventListener("click", playG5);
+
+// Ab5
+const Ab5Key = document.querySelector(".Ab5-key");
+const playAb5 = () => {
+  playSound(Ab5);
+  Ab5Key.classList.add("active");
+  setTimeout(() => Ab5Key.classList.remove("active"), 200);
+};
+Ab5Key.addEventListener("click", playAb5);
+
+
+// A5
+const A5Key = document.querySelector(".A5-key");
+const playA5 = () => {
+  playSound(A5);
+  A5Key.classList.add("active");
+  setTimeout(() => A5Key.classList.remove("active"), 200);
+};
+A5Key.addEventListener("click", playA5);
+
+// Bb5
+const Bb5Key = document.querySelector(".Bb5-key");
+const playBb5 = () => {
+  playSound(Bb5);
+  Bb5Key.classList.add("active");
+  setTimeout(() => Bb5Key.classList.remove("active"), 200);
+};
+Bb5Key.addEventListener("click", playBb5);
+
+// B5
+const B5Key = document.querySelector(".B5-key");
+const playB5 = () => {
+  playSound(B5);
+  B5Key.classList.add("active");
+  setTimeout(() => B5Key.classList.remove("active"), 200);
+};
+B5Key.addEventListener("click", playB5);
+
+// C6
+const C6Key = document.querySelector(".C6-key");
+const playC6 = () => {
+  playSound(C6);
+  C6Key.classList.add("active");
+  setTimeout(() => C6Key.classList.remove("active"), 200);
+};
+C6Key.addEventListener("click", playC6);
+
+// Db6
+const Db6Key = document.querySelector(".Db6-key");
+const playDb6 = () => {
+  playSound(Db6);
+  Db6Key.classList.add("active");
+  setTimeout(() => Db6Key.classList.remove("active"), 200);
+};
+Db6Key.addEventListener("click", playDb6);
+
+// D6
+const D6Key = document.querySelector(".D6-key");
+const playD6 = () => {
+  playSound(D6);
+  D6Key.classList.add("active");
+  setTimeout(() => D6Key.classList.remove("active"), 200);
+};
+D6Key.addEventListener("click", playD6);
+
+// Eb6
+const Eb6Key = document.querySelector(".Eb6-key");
+const playEb6 = () => {
+  playSound(Eb6);
+  Eb6Key.classList.add("active");
+  setTimeout(() => Eb6Key.classList.remove("active"), 200);
+};
+Eb6Key.addEventListener("click", playEb6);
+
+// E6
+const E6Key = document.querySelector(".E6-key");
+const playE6 = () => {
+  playSound(E6);
+  E6Key.classList.add("active");
+  setTimeout(() => E6Key.classList.remove("active"), 200);
+};
+E6Key.addEventListener("click", playE6);
+
 
 window.addEventListener("keydown", ({ keyCode }) => {
   // Press Q
